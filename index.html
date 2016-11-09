@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sandwich Maker</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<form>
+
+<fieldset>
+	<legend>Bread</legend>
+	<div id="bread-chooser">
+		<input type="radio" id="userBreadWhite" value="white" name="bread"> White Bread <br>
+		<input type="radio" id="userBreadWheat" value="wheat" name="bread"> Wheat Bread
+	</div>	
+</fieldset>
+
+<fieldset>
+	<legend>Meat</legend>
+	<select name="Meat" id="meat-chooser">
+		<option value="none" id="userMeatNone">No Meat</option>
+		<option value="ham" id="userMeatHam">Ham</option>
+		<option value="turkey" id="userMeatTurkey">Turkey</option>
+	</select>
+</fieldset>
+
+<fieldset>
+	<legend>Cheese</legend>
+	<div id="cheese-chooser">
+	  <label><input type="checkbox" value="cheddar" id="userCheeseCheddar" > Cheddar </label><br>
+	  <label><input type="checkbox" value="provolone" id="userCheeseProvolone"> Provolone </label>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Condiments</legend>
+	<div id="condiment-chooser">
+	  <input type="checkbox" value="mayo" id="userCondMayo" > Mayo <br>
+	  <input type="checkbox" value="mustard" id="userCondoMustard"> Mustard <br>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Veggies</legend>
+	<div id="veggie-chooser">
+	  <input type="checkbox" value="lettuce" id="userCondoLettuce"> Lettuce <br>
+	  <input type="checkbox" value="tomato" id="userCondoTomato"> Tomato 
+	</div>
+</fieldset>
+
+</form>
+
+<h2>Total:</h2>
+<div id="output"></div>
+
+
+<!-- link js here -->
+<script src = "javascripts/SandwichMaker.js"></script>
+<script src = "javascripts/Meat.js"></script>
+<script src = "javascripts/Cheese.js"></script>
+<script src = "javascripts/Veggie.js"></script>
+<script src = "javascripts/Condiments.js"></script>
+<script src = "javascripts/Bread.js"></script>
+<script src = "javascripts/DOMHandler.js"></script>
+</body>
+</html>
