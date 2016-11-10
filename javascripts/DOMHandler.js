@@ -12,40 +12,42 @@ var breadChooser = document.getElementById("bread-chooser");
 
 /* ---- EVENT LISTENERS ----- */
 
-breadChooser.addEventListener("click", function(event) {
+breadChooser.addEventListener("change", function(event) {
 	selectedTopping = event.target.value;
 	var sandwichPriceBread = SandwichMaker.addBread(selectedTopping);
-	finalSandwichPrice = sandwichPriceBread;
-	output.innerHTML = finalSandwichPrice;
+	finalSandwichPrice += sandwichPriceBread;
+	output.innerHTML = finalSandwichPrice.toFixed(2);
 
 });
 
 meatChooser.addEventListener("change", function(event) {
   selectedTopping = event.target.value;
   var sandwichPriceMeat = SandwichMaker.addMeat(selectedTopping); 
-  finalSandwichPrice = sandwichPriceMeat;
-  output.innerHTML = finalSandwichPrice;
+  finalSandwichPrice += sandwichPriceMeat;
+  output.innerHTML = finalSandwichPrice.toFixed(2);
 });
 
 
-cheeseChooser.addEventListener("click", function(event) {
+cheeseChooser.addEventListener("change", function(event) {
 	selectedTopping = event.target.value;
 	var sandwichPriceCheese = SandwichMaker.addCheese(selectedTopping);
-	finalSandwichPrice = sandwichPriceCheese;
-	output.innerHTML = finalSandwichPrice;
+	finalSandwichPrice += sandwichPriceCheese;
+	output.innerHTML = finalSandwichPrice.toFixed(2);
 });
 
 
-veggieChooser.addEventListener("click", function(event) {
+veggieChooser.addEventListener("change", function(event) {
 	selectedTopping = event.target.value;
 	var sandwichPriceVeggie = SandwichMaker.addVeggie(selectedTopping);
-	finalSandwichPrice = sandwichPriceVeggie;
-	output.innerHTML = finalSandwichPrice;
+	finalSandwichPrice += sandwichPriceVeggie;
+	output.innerHTML = finalSandwichPrice.toFixed(2);
 });
 
-condimentChooser.addEventListener("click", function(event) {
+condimentChooser.addEventListener("change", function(event) {
 	selectedTopping = event.target.value;
 	var sandwichPriceCheeseCondiment = SandwichMaker.addCondiment(selectedTopping);
-	finalSandwichPrice = sandwichPriceCheeseCondiment;
-	output.innerHTML = finalSandwichPrice;
+	finalSandwichPrice += sandwichPriceCheeseCondiment;
+	output.innerHTML = finalSandwichPrice.toFixed(2);
 })
+
+
