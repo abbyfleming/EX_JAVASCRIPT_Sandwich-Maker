@@ -9,5 +9,3 @@ var SandwichMaker = (function() {
   };
 
 })();
-
-console.log("SandwichMaker", SandwichMaker); 
